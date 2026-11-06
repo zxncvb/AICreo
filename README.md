@@ -1,17 +1,17 @@
-# Creo Codex Skills
+# AICreo · Creo AI 自动化技能包
 
-[![Validate skill package](https://github.com/jhyhd/creo-codex-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jhyhd/creo-codex-skills/actions/workflows/validate.yml)
+[![Validate skill package](https://github.com/zxncvb/AICreo/actions/workflows/validate.yml/badge.svg)](https://github.com/zxncvb/AICreo/actions/workflows/validate.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-面向 Windows 的中文 Codex 技能包：五个 Creo 自动化工作流，加上一个可独立运行的连续屏幕观察技能。涵盖原生特征、简单曲面、参数修改、排障、TOOLKIT 开发，以及执行结果的画面检查。性能有点差，复杂曲面基本不了实现
+面向 Windows 的中文 Creo AI 自动化技能包，由 [zxncvb](https://github.com/zxncvb) 维护。提供五个 Creo 自动化工作流和一个独立的连续屏幕观察技能，涵盖原生特征、基础曲面、参数修改、排障、TOOLKIT 开发及执行结果检查。当前更适合规则零件与基础建模，复杂曲面的自动化能力仍有限，具体支持范围以所部署的后端为准。
 
-Chinese-first Codex skills: five Creo workflows plus an independent Windows screen-observation loop. The screen helper uses Python's standard library. Creo modeling requires a separate MCP backend and, for native features, a TOOLKIT plugin; neither backend is included.
+AICreo provides Chinese-first Codex skills: five Creo workflows plus an independent Windows screen-observation loop. The screen helper uses Python's standard library. Creo modeling requires a separate MCP backend and, for native features, a TOOLKIT plugin; neither backend is included.
 
 **本仓库提供技能指令、示例、Windows 截图辅助脚本和 Creo 后端工具契约，不包含 Creo MCP 服务器或 TOOLKIT 插件实现。** 五个 Creo 技能需要合法安装的 Creo 和符合 [工具契约](docs/TOOL-CONTRACT.md) 的后端；`screen-observe-loop` 可独立截图，不依赖 Creo 或 MCP。截图内容仍需由 agent 读取和判断。
 
 说明依据一套 Creo 11 / Windows 环境的本地实现整理。支持范围由后端版本决定，不代表 PTC 官方承诺，也不保证其他 Creo 版本可直接使用。
 
-项目地址：[jhyhd/creo-codex-skills](https://github.com/jhyhd/creo-codex-skills)
+项目地址：[zxncvb/AICreo](https://github.com/zxncvb/AICreo) · 相关项目：[AISolidworks](https://github.com/zxncvb/AISolidworks)
 
 ## 六个技能
 
@@ -55,8 +55,8 @@ flowchart LR
 将本仓库下载或克隆到任意目录，在仓库根目录运行 PowerShell：
 
 ```powershell
-git clone https://github.com/jhyhd/creo-codex-skills.git
-Set-Location creo-codex-skills
+git clone https://github.com/zxncvb/AICreo.git
+Set-Location AICreo
 
 # 先预览目标位置；有同名技能时脚本会拒绝覆盖。
 .\scripts\install-skills.ps1 -WhatIf

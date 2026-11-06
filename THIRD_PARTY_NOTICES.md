@@ -2,7 +2,9 @@
 
 ## 本仓库包含什么
 
-本仓库包含六个技能：五个 Creo 技能依据原有本机自研技能整理，另附一个独立的 `screen-observe-loop` 技能及其原创 Windows 截图辅助脚本。配套说明已重新组织并去除机器专属配置。
+本仓库 AICreo 在 [jhyhd/creo-codex-skills](https://github.com/jhyhd/creo-codex-skills) 的基础上维护，项目入口为 [zxncvb/AICreo](https://github.com/zxncvb/AICreo)。原有作者署名和 MIT 许可证保留；仓库名称与维护入口调整不代表对上游内容重新主张原创。
+
+本仓库包含六个技能：上游整理的五个 Creo 技能，以及一个独立的 `screen-observe-loop` 技能和 Windows 截图辅助脚本。配套说明与安装方式以当前仓库为准。
 
 五个 Creo 技能指导独立后端的调用方式；本仓库没有包含 Creo MCP / TOOLKIT 后端源码或二进制，也没有声称获得其再分发权。屏幕辅助脚本使用 Python 标准库调用 Windows 系统接口，不捆绑第三方图像库或 Windows 组件。
 

@@ -10,14 +10,14 @@
 
 ## 建立远程仓库
 
-本项目仓库地址为 [jhyhd/creo-codex-skills](https://github.com/jhyhd/creo-codex-skills)。首次创建空远程仓库时，本地已有 README、许可证和 Git 初始化，无需在远程另加同名文件。
+本项目仓库地址为 [zxncvb/AICreo](https://github.com/zxncvb/AICreo)。首次创建空远程仓库时，本地已有 README、许可证和 Git 初始化，无需在远程另加同名文件。
 
 确认 Git 提交身份符合自己的公开署名偏好。手动首次发布时，可在本仓库根目录执行以下示例；已配置 `origin` 时先检查现有远程，不重复添加：
 
 ```powershell
 git add .
 git commit -m "Prepare portable Creo skill package"
-git remote add origin https://github.com/jhyhd/creo-codex-skills.git
+git remote add origin https://github.com/zxncvb/AICreo.git
 git push -u origin main
 ```
 
